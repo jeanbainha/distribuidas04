@@ -3,6 +3,7 @@ import java.rmi.RemoteException;
 
 // Interface remota para o exemplo "Hello, world!"
 public interface JogadorInterface extends Remote {
-	//public void encerrado() throws RemoteException;
+	public void encerrado() throws RemoteException;
+	public void setId(int id) throws RemoteException;
 }
 
