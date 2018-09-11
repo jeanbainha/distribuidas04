@@ -1,6 +1,7 @@
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
+// Classe remota para o exemplo "Hello, world!"
 public class Jogador extends UnicastRemoteObject implements JogadorInterface {
 	private static final long serialVersionUID = 7895385898928783746L;
 	private String nome;
@@ -16,7 +17,7 @@ public class Jogador extends UnicastRemoteObject implements JogadorInterface {
 	}
 	//imprime na tela a mensagem
 	public void encerrado() throws RemoteException{
-		System.out.println("voce foi retirado do jogo");
+		System.out.println("voce com id = " + id + " foi retirado do jogo");
 	}
 }
 
